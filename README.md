@@ -7,4 +7,4 @@
 
 ### Pessoalmente, optei por adaptar o design do Figma e criar algo mais criativo, usando outras cores e elementos ligeiramente diferentes, apesar de manter a estrutura geral da página.
 
-### O projeto foi feito com uso de JavaScript, HTML e CSS, com o programa VSCode.
+### Feito com uso de JavaScript, HTML e CSS, com o programa VSCode.
