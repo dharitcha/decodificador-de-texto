@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav>
+            <a href="index.html">
+                <img class="cabecalho__imagem" src="assets/logo.png" alt="Logo da página">
+            </a>
+        </nav>
+    </header>
+    <main class="conteudo">
+        <section class="entrada">
+            <textarea class="entrada__titulo" id="entrada_texto">Digite seu texto...</textarea>
+            <p class="entrada__aviso">ⓘ Apenas letras minúsculas e sem acento.</p>
+            <div class="entrada__botao">
+                <button id="criptografar">Criptografar</button>
+                <button id="descriptografar">Descriptografar</button>
+            </div>
+        </section>
+        <section class="saida">
+            <div class="saida__container">
+                <section class="saida__vazia">
+                    <img class="saida__vazia__imagem" src="assets/menina-de-fone.png" alt="Jovem mulher de cabelo colorido com fones de ouvido">
+                    <div class="saida__vazia__conteudo">
+                        <h3 class="saida__vazia__conteudo__titulo">Nenhuma mensagem encontrada</h3>
+                        <p class="saida__vazia__conteudo__texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
+                </section>
+                <section class="saida__resultado">
+                    <textarea id="saida_texto"></textarea>
+                    <div class="saida__botao">
+                        <button id="copiar">Copiar</button>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Por Dhara Castilho</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #2b2d2f;
+    --cor-secundaria: #493967;
+    --cor-terciaria: #874280;
+    --cor-quarternaria: #2786b2;
+    --cor-fundo: #f3f3f3;
+
+
+    --fonte-titulo: "Inter", sans-serif;
+    --fonte-padrao: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--cor-primaria);
+    box-sizing: border-box;
+    background-image: url('assets/fundo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.cabecalho {
+    padding: 1% 0% 0% 2%;
+}
+
+.cabecalho__imagem {
+    width: 3%;
+    height: 3%;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.entrada__botao button {
+    border-radius: 16px; 
+    cursor: pointer; 
+    font-family: var(--fonte-padrao);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.85rem;
+}
+
+#criptografar {
+    background-color: var(--cor-quarternaria);
+    color: var(--cor-fundo);
+    border: none;
+    font-family: var(--fonte-padrao);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.85rem;
+    padding: 2% 12% 2% 12%; 
+}
+
+#descriptografar {
+    background-color: var(--cor-fundo);
+    color: var(--cor-quarternaria);
+    border: 1px solid var(--cor-quarternaria);
+    font-family: var(--fonte-padrao);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.85rem;
+    padding: 2% 10% 2% 10%; 
+}
+
+.saida__botao button {
+    padding: 7% 45% 7% 40%;
+    border-radius: 16px; 
+    cursor: pointer; 
+    font-family: var(--fonte-padrao);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.85rem;
+}
+
+#copiar {
+    background-color: white;
+    color: var(--cor-quarternaria);
+    border: 1px solid var(--cor-quarternaria);
+    font-family: var(--fonte-padrao);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.85rem;
+    align-self: flex-end;
+}
+
+.entrada {
+    padding: 1% 5% 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    gap: 20px;
+    width: 70%;
+}
+
+.entrada__titulo {
+    color: var(--cor-terciaria);
+    font-size: 1.85rem;
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    background-color: var(--cor-fundo);
+    width: auto;
+}
+
+.entrada__aviso {
+    color: var(--cor-primaria);
+    font-size: 0.75rem;
+    font-family: var(--fonte-padrao);
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 60%;
+    background-color: rgba(243, 243, 243, 0.35);
+}
+
+.saida {
+    padding: 3%;
+    margin: 0% 3% 3% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    gap: 20px;
+    border: white;
+    background-color: white;
+    border-radius: 32px;
+    height: 500px;
+    width: 25%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.saida__vazia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: auto;
+}
+
+.saida__vazia__imagem {
+    padding: 25% 3% 5% 3%;
+}
+
+.saida__vazia__conteudo {
+    text-align: center;
+    gap: 20px;
+}
+
+.saida__vazia__conteudo__titulo {
+    color: var(--cor-terciaria);
+    font-size: 1.25rem;
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 5%;
+}
+
+.saida__vazia__conteudo__texto {
+    font-family: var(--fonte-padrao);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cor-primaria);
+}
+
+.saida__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.saida__resultado {
+    padding: 3%;
+    margin: 0% 3% 3% 0%;
+}
+
+#saida_texto {
+    padding: 3%;
+    border: none;
+    background-color: white;
+    font-family: var(--fonte-padrao);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--cor-primaria);
+    width: 100%;
+    min-height: 300px;
+    resize: vertical;
+    align-items: center;
+    margin-bottom: 50%; 
+    margin-top: 15%;
+}
+
+.rodape {
+    color: var(--cor-fundo);
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.85rem;
+    padding: 1.2% 1.2%;
+}
+
+/* Falta otimizar pra dispositivo móvel */
+
+@media (max-width: 1200px){
+    .cabecalho__imagem {
+        width: 10%;
+        height: 10%;
+        margin: 5% 0% 0% 2%;
+    }
+
+    body {
+        background-image: none;
+        background-color: var(--cor-fundo);
+    }
+
+    .conteudo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5% 7% 20% 10%;
+        gap: 50px;
+        margin: auto;
+    }
+
+    .entrada {
+        padding: 1% 5% 5% 0%;
+        gap: 30px;
+        width: auto;
+    }
+
+    .entrada__botao button{
+        margin: 0% 10% 0% 5%;
+    }
+
+    #criptografar {
+        padding: 9% 29.3% 9% 29.3%;
+        margin-bottom: 20px;
+    }
+
+    #descriptografar {
+        padding: 8% 25% 8% 25%;
+    }
+
+    .entrada__titulo{
+        padding-top: 30px;
+        font-size: 1.70rem;
+        width: 95%;
+    }
+
+    .saida {
+        width: 95%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .saida__container {
+        width: auto;
+        padding-right: 8%;
+    }
+
+    .saida__vazia__imagem {
+        padding: 10% 0% 5% 3%;
+        width: 95%;
+        height: auto;
+    }
+
+    #saida_texto {
+        margin-top: 20%;
+    }
+
+    #copiar {
+        padding: 10% 45% 10% 45%;
+        margin-bottom: 40px;
+    }
+
+    .rodape {
+        padding: 5% 0% 5% 0%;
+    }
+}
