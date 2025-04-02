@@ -1,10 +1,59 @@
-# Decodificador de Texto
+# Text Decoder
 
-![Decodificador de Texto](https://github.com/dharitcha/decodificador-de-texto/assets/157736779/8e1f65bf-60f9-4f0c-9887-9964c5994f6a)
+## Overview
+This project is a simple text encryption and decryption application developed as part of the Logic Programming Challenge from the Alura and Oracle Next Education program. The goal was to build a functional text encoder/decoder from scratch using only the provided encryption key and a Figma design suggestion.
 
+## Features
+- **Text Encryption:** Converts input text into an encrypted format using a predefined substitution cipher.
+- **Text Decryption:** Reverts the encrypted text back to its original form.
+- **Copy to Clipboard:** Allows users to easily copy the processed text.
+- **Dynamic UI Handling:** Displays different states based on user interaction.
 
-O projeto do Decodificador de Texto foi parte do Challenge do curso de Lógica de Programação, do programa da Alura com a Oracle Next Education. O objetivo foi desenvolver habilidades de programação básica, criando um projeto do zero com apenas a chave da criptografia em mãos e uma sugestão de design no Figma.
+## Technologies Used
+- **JavaScript**: Core functionality for encryption, decryption, and UI interactions.
+- **HTML**: Structuring the web interface.
+- **CSS**: Styling the application.
 
-Pessoalmente, optei por adaptar o design do Figma e criar algo mais criativo, usando outras cores e elementos ligeiramente diferentes, apesar de manter a estrutura geral da página.
+## How It Works
+### Encryption Logic
+The encryption function substitutes vowels with predefined strings:
+- `a` → `ai`
+- `e` → `enter`
+- `i` → `imes`
+- `o` → `ober`
+- `u` → `ufat`
 
-Feito com uso de JavaScript, HTML e CSS, com o programa VSCode.
+Example:
+```
+Input: "hello world"
+Encrypted: "henterllober woberrloberd"
+```
+
+### Decryption Logic
+The decryption function reverses the substitutions:
+```
+Encrypted: "henterllober woberrloberd"
+Decrypted: "hello world"
+```
+
+### UI Functionality
+- The encryption and decryption buttons trigger their respective functions.
+- The copy button selects and copies the processed text to the clipboard.
+- The display dynamically updates to show the output only when there is content.
+
+## Installation and Usage
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/your-username/text-decoder.git
+   ```
+2. Open `index.html` in a web browser.
+3. Enter text and use the encryption/decryption features.
+
+## Future Improvements
+- Add support for additional encryption methods.
+- Implement a more secure encryption algorithm.
+- Enhance the UI with animations and better responsiveness.
+
+## License
+This project is open-source and available under the MIT License.
+
