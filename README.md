@@ -44,7 +44,7 @@ Decrypted: "hello world"
 ## Installation and Usage
 1. Clone this repository:
    ```sh
-   git clone https://github.com/your-username/text-decoder.git
+   git clone https://github.com/dharitcha/js-text-decoder.git
    ```
 2. Open `index.html` in a web browser.
 3. Enter text and use the encryption/decryption features.
